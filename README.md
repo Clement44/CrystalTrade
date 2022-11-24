@@ -41,8 +41,8 @@ We have elaborated the design of the architecture on Monday and then implemented
 ### Project Submission
 
 Features of the solution : 
--CREATE() : Once the carbon credits are retired from the carbon registry, we call a custom function which is "create" and that create the related ERC1155 token with the following parameters (address initalOwner, uint256 initialSupply, string tokenUri, string retiredTokenUri, bytes data). Initial supply is the number of carbon credits retired and for the Uri, it's where we do the link with all the traceability of the carbon credits and its issuance from a project.
-- RETIRE() : Then, when a user wants to retire its carbon credits (it means to offset its emissions), we call this function and as an input, it generates a ERC1155 token immutable (like a certificate). 
+-CREATE() : Once the carbon credits are retired from the carbon registry, we call a custom function which is "create" and that create the related ERC1155 semi-fongible token with the following parameters (address initalOwner, uint256 initialSupply, string tokenUri, string retiredTokenUri, bytes data). Initial supply is the number of carbon credits retired and for the Uri, it's where we do the link with all the traceability of the carbon credits and its issuance from a project.
+- RETIRE() : Then, when a user wants to retire its carbon credits (it means to offset its emissions), we call this function and as an input, it generates a ERC1155 semi-fongible token immutable (like a certificate). 
 
 
 - Demo of the project : 
